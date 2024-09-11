@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mk051\\Desktop\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\mk051\\Desktop\\TalkGame\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBF34E8E-D838-4E6E-AADD-CEE154D24299}|Program\\Program.vcxproj|C:\\Users\\mk051\\Desktop\\Program\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{3AFFCFB7-307D-4BBB-A972-E7B3D6533AC0}|Class1th (GetAsyncStateKey)\\Class1th (GetAsyncStateKey).vcxproj|C:\\Users\\mk051\\Desktop\\TalkGame\\Program\\Class1th (GetAsyncStateKey)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3AFFCFB7-307D-4BBB-A972-E7B3D6533AC0}|Class1th (GetAsyncStateKey)\\Class1th (GetAsyncStateKey).vcxproj|solutionrelative:Class1th (GetAsyncStateKey)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF34E8E-D838-4E6E-AADD-CEE154D24299}|Program\\Program.vcxproj|C:\\Users\\mk051\\Desktop\\TalkGame\\Program\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EBF34E8E-D838-4E6E-AADD-CEE154D24299}|Program\\Program.vcxproj|solutionrelative:Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +24,24 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\mk051\\Desktop\\Program\\Program\\Source.c",
+              "DocumentMoniker": "C:\\Users\\mk051\\Desktop\\TalkGame\\Program\\Class1th (GetAsyncStateKey)\\Source.c",
+              "RelativeDocumentMoniker": "Class1th (GetAsyncStateKey)\\Source.c",
+              "ToolTip": "C:\\Users\\mk051\\Desktop\\TalkGame\\Program\\Class1th (GetAsyncStateKey)\\Source.c",
+              "RelativeToolTip": "Class1th (GetAsyncStateKey)\\Source.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-09-11T12:14:36.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\mk051\\Desktop\\TalkGame\\Program\\Program\\Source.c",
               "RelativeDocumentMoniker": "Program\\Source.c",
-              "ToolTip": "C:\\Users\\mk051\\Desktop\\Program\\Program\\Source.c",
+              "ToolTip": "C:\\Users\\mk051\\Desktop\\TalkGame\\Program\\Program\\Source.c",
               "RelativeToolTip": "Program\\Source.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAuAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAiwHEAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-10T11:06:18.101Z",
               "EditorCaption": ""
