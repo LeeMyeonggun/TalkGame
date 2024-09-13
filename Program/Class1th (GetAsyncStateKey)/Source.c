@@ -5,10 +5,10 @@
 
 void Position(int x, int y)
 {
-	// Xì™€ yì¶•ì„ ì„¤ì •í•˜ëŠ” êµ¬ì¡°ì²´ì…ë‹ˆë‹¤.
+	// X¿Í yÃàÀ» ¼³Á¤ÇÏ´Â ±¸Á¶Ã¼ÀÔ´Ï´Ù.
 	COORD position = { x, y };
 
-	// ì½˜ì†” ì»¤ì„œì˜ ì¢Œí‘œë¥¼ ì„¤ì •í•˜ëŠ” í•¨ìˆ˜ì…ë‹ˆë‹¤.
+	// ÄÜ¼Ö Ä¿¼­ÀÇ ÁÂÇ¥¸¦ ¼³Á¤ÇÏ´Â ÇÔ¼öÀÔ´Ï´Ù.
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
 }
 
@@ -18,6 +18,9 @@ void Position(int x, int y)
 #define RIGHT 77
 #define DOWN 80
 
+#define WIDTH 11
+#define HEIGHT 11
+
 
 int screenIndex;
 HANDLE screen[2];
@@ -26,7 +29,7 @@ void Initialize()
 {
 	CONSOLE_CURSOR_INFO cursor;
 
-	// í™”ë©´ ë²„í¼ë¥¼ 2ê°œ ìƒì„±í•©ë‹ˆë‹¤.
+	// È­¸é ¹öÆÛ¸¦ 2°³ »ı¼ºÇÕ´Ï´Ù.
 	screen[0] = CreateConsoleScreenBuffer
 	(
 		GENERIC_READ | GENERIC_WRITE,
@@ -86,57 +89,107 @@ void Render(int x, int y, const char* string)
 
 }
 
+char maze[HEIGHT][WIDTH] = { {'2', '0', '1', '1', '1', '1' ,'1', '1', '1', '1', '1' },
+							{'1', '0', '1', '0', '1', '1' ,'1', '1', '0', '1', '1' },
+							{'1', '0', '1', '0', '0', '0' ,'1', '1', '0', '0', '1' },
+							{'1', '0', '0', '0', '1', '0' ,'1', '0', '0', '0', '1' },
+							{'1', '1', '1', '1', '1', '0' ,'1', '0', '1', '1', '1' },
+							{'1', '0', '0', '0', '0', '0' ,'0', '0', '0', '1', '1' },
+							{'1', '1', '1', '0', '1', '1' ,'1', '1', '0', '1', '1' },
+							{'1', '0', '1', '0', '1', '1' ,'1', '1', '1', '1', '1' },
+							{'1', '0', '0', '0', '0', '0' ,'0', '0', '0', '0', '1' },
+							{'1', '1', '1', '0', '1', '1' ,'1', '1', '1', '0', '1' },
+							{'1', '1', '1', '1', '1', '1' ,'1', '1', '1', '0', '2' } };
+
+typedef struct
+{
+	int x;
+	int y;
+	const char* shape;
+
+} Character;
 
 int main()
 {
+
+
+
+	for (int i = 0; i < HEIGHT; i++)
+	{
+		for (int j = 0; j < WIDTH; j++)
+		{
+			if (maze[i][j] == '1')
+			{
+				printf("¡á");
+			}
+			else if (maze[i][j] == '0')
+			{
+				printf("  ");
+			}
+			else
+			{
+				printf("¢Á");
+			}
+
+		}
+		printf("\n");
+
+	}
 	char key = 0;
 
-	int x = 0;
-	int y = 0;
-	
-	Initialize();
+	Character character = { 0,0,"¡Ú" };
 		
+	
+	
+
+	//Initialize();
+
 
 	while (1)
 	{
-
-		Flip();
-
-		Clear();
-
+	
+		//Flip();
+	
+		//Clear();
+	
 		key = _getch();
-
+	
 		if (key == -32)
 		{
 			key = _getch();
 		}
-				
-		
+	
+	
 		switch (key)
 		{
 		case UP:
-			y--;
+			character.y--;
 			break;
-
+	
 		case LEFT:
-			x -= 2;
+			character.x -= 2;
 			break;
-
+	
 		case RIGHT:
-			x += 2;
+			character.x += 2;
 			break;
-
+	
 		case DOWN:
-			y++;
+			character.y++;
 			break;
 	
 		}
-
-		Render(x, y, "â˜†");
-
-		
-	}
 	
+		Position(character.x, character.y);
+		printf("%s",character.shape);
+		
+		//system("cls");
+		
+		// Render(x, y, "¡Ù");
+	}
+
+
+
 
 	return 0;
 }
