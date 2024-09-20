@@ -7,9 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Program", "Program\Program.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class1th (GetAsyncKeyState)", "Class1th (GetAsyncStateKey)\Class1th (GetAsyncStateKey).vcxproj", "{3AFFCFB7-307D-4BBB-A972-E7B3D6533AC0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 2th (Double Buffering)", "Class 2th (Double Buffering)\Class 2th (Double Buffering).vcxproj", "{CAA81788-4295-41B4-902E-87885024204D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class2th (Double Buffering)", "Class 2th (Double Buffering)\Class 2th (Double Buffering).vcxproj", "{CAA81788-4295-41B4-902E-87885024204D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 3th (Maze Game)", "Class 3th (Maze Game)\Class 3th (Maze Game).vcxproj", "{3489F0B5-2AA3-4D2B-B7C9-EFB50CF233D9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class3th (Maze Game)", "Class 3th (Maze Game)\Class 3th (Maze Game).vcxproj", "{3489F0B5-2AA3-4D2B-B7C9-EFB50CF233D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class4th (File Input and Output)", "Class4th (Fine input and Output)\Class4th (Fine input and Output).vcxproj", "{547F987E-9935-4E2F-A5D7-0794C5ECE62D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,14 @@ Global
 		{3489F0B5-2AA3-4D2B-B7C9-EFB50CF233D9}.Release|x64.Build.0 = Release|x64
 		{3489F0B5-2AA3-4D2B-B7C9-EFB50CF233D9}.Release|x86.ActiveCfg = Release|Win32
 		{3489F0B5-2AA3-4D2B-B7C9-EFB50CF233D9}.Release|x86.Build.0 = Release|Win32
+		{547F987E-9935-4E2F-A5D7-0794C5ECE62D}.Debug|x64.ActiveCfg = Debug|x64
+		{547F987E-9935-4E2F-A5D7-0794C5ECE62D}.Debug|x64.Build.0 = Debug|x64
+		{547F987E-9935-4E2F-A5D7-0794C5ECE62D}.Debug|x86.ActiveCfg = Debug|Win32
+		{547F987E-9935-4E2F-A5D7-0794C5ECE62D}.Debug|x86.Build.0 = Debug|Win32
+		{547F987E-9935-4E2F-A5D7-0794C5ECE62D}.Release|x64.ActiveCfg = Release|x64
+		{547F987E-9935-4E2F-A5D7-0794C5ECE62D}.Release|x64.Build.0 = Release|x64
+		{547F987E-9935-4E2F-A5D7-0794C5ECE62D}.Release|x86.ActiveCfg = Release|Win32
+		{547F987E-9935-4E2F-A5D7-0794C5ECE62D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
